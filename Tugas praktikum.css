@@ -1,0 +1,99 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.box {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.yellow { background-color: #ffff99; } 
+.orange { background-color: #ff8c66; } 
+.lightgreen { background-color: #99cc99; } 
+.grey { background-color: #cccccc; } 
+.lightblue { background-color: #66ccff; } 
+.blue { background-color: #3366cc; } 
+
+
+.browser-frame {
+    width: 800px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    overflow: hidden;
+}
+
+.browser-bar {
+    background-color: #e0e0e0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="20"><path d="M10 10l-5 5V5z" fill="#333"/><path d="M20 10l-5 5V5z" fill="#333"/><path d="M30 10l-5 5V5z" fill="#333" transform="scale(-1, 1) translate(-55, 0)"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+
+.browser-bar .url {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 3px 10px;
+    border-radius: 4px;
+    flex-grow: 1;
+    margin-left: 65px;
+    font-family: monospace;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px auto 70px;
+    gap: 0;
+    height: 500px;
+    
+    grid-template-areas: 
+        "box-a box-b box-b"
+        "box-c box-d box-e"
+        "box-f box-f box-f";
+}
+
+
+
+#box-a {
+    grid-area: box-a;
+}
+
+#box-b {
+    grid-area: box-b; 
+}
+
+#box-c {
+    grid-area: box-c;
+}
+
+#box-d {
+    grid-area: box-d;
+}
+
+#box-e {
+    grid-area: box-e; 
+}
+
+#box-f {
+    grid-area: box-f; 
+}
+
+
